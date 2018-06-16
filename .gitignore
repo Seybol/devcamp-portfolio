@@ -28,3 +28,5 @@
 #I do not want to show my secrets
 /config/secrets.yml
 cc
+#I don't want to upload my RubyMine-Vim settings
+.idea
