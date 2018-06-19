@@ -15,4 +15,9 @@ module ApplicationHelper
       content_tag :div, greeting, class: "my-class"
     end
   end
+
+  def copyright_generator
+    puts "*****************" * 30
+    BobolViewTool::Renderer.copyright 'CEBULA Sebastien', 'All right reserved'
+  end
 end
