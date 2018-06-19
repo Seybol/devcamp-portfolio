@@ -83,9 +83,3 @@ class BlogsController < ApplicationController
     params.require(:blog).permit(:title, :body)
   end
 end
-class Seb
-  #code
-  def name
-    "Sebastien CEBULA !!!"
-  end
-end
