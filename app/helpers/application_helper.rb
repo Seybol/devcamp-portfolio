@@ -8,4 +8,11 @@ module ApplicationHelper
       (link_to 'Register', new_user_registration_path)
     end
   end
+
+  def source_helper(layout_name)
+    if session[:source]
+      greeting = "Thanks for visiting us from #{session[:source]} and you are on the #{layout_name} layout !"
+      content_tag :div, greeting, class: "my-class"
+    end
+  end
 end
