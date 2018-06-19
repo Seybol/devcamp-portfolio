@@ -17,7 +17,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    puts "*****************" * 30
     BobolViewTool::Renderer.copyright 'CEBULA Sebastien', 'All right reserved'
   end
 end
