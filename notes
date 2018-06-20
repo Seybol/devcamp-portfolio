@@ -1,0 +1,7 @@
+gem 'jquery-rails'    for application.js to work for boostrap
+Create own Gem :
+bundle gem bobol_view_tool
+edit bobol_view_tool.gemspec
+
+require "bobol_view_tool/renderer" dans bobol_view_tool.rb
+create file in bobol_view_tool
