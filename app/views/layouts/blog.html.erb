@@ -12,15 +12,14 @@
   <body>
 
 
-    <!-- Start of nav -->
     <%= render 'shared/blog_nav' %>
-    <!-- End of nav -->
 
     <!-- Start of header -->
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <h1 class="blog-title">My blog</h1>
         <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <%= link_to 'Write new blog', new_blog_path if logged_in?(:site_admin)%>
       </div>
     </div>
     <!-- End of header -->
@@ -28,8 +27,8 @@
     <!-- Start of contrainer -->
     <div class="container">
       <div class="row">
-        <% login_helper %>
-        <%= render "shared/application_nav" %>
+
+
         <%= yield %>
 
         <!-- Start of sidebar -->
@@ -64,26 +63,22 @@
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
-        <!-- End of sidebar -->
-
-
-        <%= render "shared/application_footer" %>
-
-
-        <%= source_helper("application") %>
       </div>
+      <!-- End of sidebar -->
+
+
+      <!-- End of contrainer -->
+
+      <!-- Start of footer -->
+      <footer class="blog-footer">
+        <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+        <a href="#">Back to top</a>
+        </p>
+      </footer>
+      <!-- End of footer -->
+
+      <%= source_helper("blog") %>
     </div>
-    <!-- End of contrainer -->
-
-    <!-- Start of footer -->
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-      <a href="#">Back to top</a>
-      </p>
-    </footer>
-    <!-- End of footer -->
-
-    <%= source_helper("blog") %>
   </body>
 </html>
