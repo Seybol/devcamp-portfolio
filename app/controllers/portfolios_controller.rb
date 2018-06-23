@@ -13,6 +13,7 @@ class PortfoliosController < ApplicationController
     end
     head :ok
   end
+
   def angular
     @angular_items = Portfolio.angular
   end

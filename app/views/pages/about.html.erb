@@ -1,10 +1,22 @@
 <main role="main" class="inner cover">
-  <h1></h1>
-  <%= content_tag :p do %>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu diam hendrerit, aliquam lectus non, semper sapien. In porttitor feugiat tempus. Mauris sit amet leo eget sapien aliquet accumsan. Suspendisse pulvinar ultricies purus. Sed consectetur quis nibh at dignissim. Nam scelerisque tristique felis a cursus. Proin ut lacus tempus, porttitor dolor vestibulum, fringilla odio.
 
-  <% end %>
-  <%= content_tag :p do %>
-Nam nec rhoncus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis, eros dignissim mollis tincidunt, nibh nibh pretium magna, eget laoreet lacus neque sed dui. Nunc varius dignissim neque id egestas. Nulla facilisi. Pellentesque efficitur imperdiet lectus a blandit. Praesent efficitur lacus libero, et accumsan ipsum dapibus at. Phasellus quis interdum est. Nulla efficitur quis nulla sed condimentum. Sed ac malesuada dui.
-  <% end %>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag 'ruby.jpg', width: 275, alt: "profile ruby" %>
+    </div>
+
+    <div class="col-md-8">
+      <h1>About me !</h1>
+      <%= content_tag :p do %>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu diam hendrerit, aliquam lectus non, semper sapien. In porttitor feugiat tempus. Mauris sit amet leo eget sapien aliquet accumsan. Suspendisse pulvinar ultricies purus. Sed consectetur quis nibh at dignissim. Nam scelerisque tristique felis a cursus. Proin ut lacus tempus, porttitor dolor vestibulum, fringilla odio.
+
+      <% end %>
+      <%= content_tag :p do %>
+        Nam nec rhoncus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis, eros dignissim mollis tincidunt, nibh nibh pretium magna, eget laoreet lacus neque sed dui. Nunc varius dignissim neque id egestas. Nulla facilisi. Pellentesque efficitur imperdiet lectus a blandit. Praesent efficitur lacus libero, et accumsan ipsum dapibus at. Phasellus quis interdum est. Nulla efficitur quis nulla sed condimentum. Sed ac malesuada dui.
+      <% end %>
+    </div>
+  </div>
+
+
 </main>
