@@ -5,11 +5,6 @@ class PortfoliosController < ApplicationController
 
   def index
     @portfolio_items = Portfolio.by_position
-    puts "==============="
-    @portfolio_items.each do |item|
-      puts item.inspect
-    end
-    puts "==============="
   end
 
   def angular
