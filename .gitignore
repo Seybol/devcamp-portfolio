@@ -30,3 +30,5 @@
 cc
 #I don't want to upload my RubyMine-Vim settings
 .idea
+# I don't want to share my keys in .env
+.env
