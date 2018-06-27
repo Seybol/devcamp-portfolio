@@ -41,7 +41,7 @@ body {
 }
 
 .cover-container {
-  max-width: 55em;
+  max-width: 65em;
 }
 
 
@@ -148,4 +148,15 @@ body {
    transform: translateX(-50%) translateY(-50%);
    background: image_url('background.jpg') no-repeat;
    background-size: cover;
+ }
+
+ .tech-news {
+   color: black;
+   margin: 20px;
+ }
+ .tech-news a{
+   color: green;
+ }
+ .tech-news > .card{
+   padding: 30px;
  }
