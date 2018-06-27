@@ -17,6 +17,7 @@ class User < ApplicationRecord
   #timeoutable -> We can log out an user after x hours/days ...
 
   validates_presence_of :name
+  has_many :comments, dependent: :destroy
 
   def first_name
     self.name.split.first

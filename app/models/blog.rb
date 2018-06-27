@@ -6,6 +6,7 @@ class Blog < ApplicationRecord
   validates_presence_of :title, :body
 
   belongs_to :topic, optional: true
+  has_many :comments, dependent: :destroy
 
   def featured_blogs
     Blog.all.limit(2)
